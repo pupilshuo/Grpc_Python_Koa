@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+
+package test;
+
+
+service Hello {
+    rpc HelloLys (HelloReq) returns (HelloRes);
+}
+
+
+message HelloReq {
+    string pic =1;
+}
+
+
+message HelloRes {
+    string result =1;
+}
